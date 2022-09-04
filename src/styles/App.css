@@ -42,3 +42,23 @@ body{
         opacity: 0;
     }
 }
+
+/* Text Styles  */
+.text-100{
+    color:#ffffffdf
+}
+.text-200{
+    color:#ffffffc0
+}
+.text-300{
+    color:#ffffff9c
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+.text-principal{
+    color:#2DFFF5
+}

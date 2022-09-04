@@ -5,7 +5,6 @@ import { FaBars } from 'react-icons/fa'
 //Globales
 export const GlobalStyle = createGlobalStyle`
     section{
-    min-height:100vh;
     color:white;
     padding:15vh 10vw;
         @media screen and (max-width: 890px){
@@ -91,7 +90,7 @@ export const GlobalStyle = createGlobalStyle`
 export const ContainerNav = styled.nav`
     position: fixed;
     height: 5rem;
-    background: linear-gradient(to bottom, #0007, transparent);
+    background: linear-gradient(to top, transparent, #000);
     width:100vw;
     color: #fff;
     z-index:999;
@@ -176,7 +175,7 @@ export const RutaHome = styled.a`
     text-decoration:none;
     font-size:20px;
     &:hover{
-        color:#2DFFF5;
+        color:#1875ff;
         font-weight:500
     }
 `
@@ -229,7 +228,27 @@ export const BtnDownloadCV = styled.a`
 
 //Home
 
-export const Content = styled.div`
+export const Button = styled.a`
+    padding:12px 15px;
+    background:#1875FF;
+    border:2px solid transparent;
+    background:${props => props.bg_color};
+    color:#fff;
+    color:${props => props.txt_color};
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.2s;
+    cursor:pointer;
+    text-transform:uppercase;
+    &:hover{
+        background:transparent;
+        border:2px solid #fff;
+        color:#fff;
+        background:${props => props.bg_color_hover};
+        border:2px solid ${props => props.border_hover};
+        color:${props => props.txt_color_hover}
+    }
 `
 
 //Para los iconos del home

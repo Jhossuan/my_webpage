@@ -4,6 +4,7 @@ import About from './routes/About'
 import Projects from './routes/Projects'
 import Contact from './routes/Contact'
 import './styles/App.css'
+import '/node_modules/primeflex/primeflex.css'
 
 function App() {
 
