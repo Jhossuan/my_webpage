@@ -7,8 +7,9 @@ export const GlobalStyle = createGlobalStyle`
     section{
     color:white;
     padding:15vh 10vw;
-        @media screen and (max-width: 890px){
-            padding: 15vh 7vw;
+    min-height:90vh;
+    @media screen and (max-width: 890px){
+        padding: 15vh 7vw;
         }
     }
     ::-webkit-scrollbar{
@@ -60,7 +61,7 @@ export const GlobalStyle = createGlobalStyle`
         font-size:20px;
         font-weight: 700;
         position:absolute;
-        top:34vh;
+        top:30vh;
         right:15vw;
         color: #03d9ff;
         text-decoration: none;
